@@ -82,5 +82,192 @@
 }
 
 .ul-div01 li {
-    margin: 5px 5px;
+    margin: 5px 5px; /*alterando os 4 lados externos dos elementos, primeiro valor (superior, inferior) e segundo valor (lados esquerdo, direito)*/
+}
+
+.div02{
+    padding: 1rem;
+    width: 25%;
+    min-width: 299px;
+    height: 20rem;
+    background-image: url(img/);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.div02 i{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.div02 span{
+     color: gold;
+    background-color: black;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-right: 13rem;
+}
+
+.img-div{
+    padding: 3%; /*preenchimento interno*/
+    background-image: url(imagens/images.jpg); /*caminho da img*/
+    background-position: center; /*posicionamento da img*/
+    background-size: cover; /*preenchimento total da img na caixa*/
+}
+
+/*estilizando a segunda section*/
+.section-02, .section-04{
+    display: flex; /*tornando lado a lado*/
+    justify-content: center; /*alinhamento horizontal*/
+    align-items: center; /*alinhamento vertical*/
+    gap: 1.5rem; /*brecha entre as caixa*/
+    padding: 5rem; /*preenchimento interno*/
+    background-color: rgb(46, 45, 45); /*cor de fundo*/
+    flex-wrap: wrap; /*caso necessário voce poderá quebrar*/
+    font-size: 1.5rem;
+}
+
+.caixa{
+    width: 25%; /*largura da caixa*/
+    height: 22rem; /*altura da caixa*/
+    background-color: grey; /*cor de fundo*/
+    min-width: 299px; /*largura minima da div*/
+    font-size: 1.2; /*tamanho das letras*/
+    color: gold; /*cor dos textos*/
+    box-shadow: 10px 10px 20px rgb(245, 222, 179, 0.354); /*sombra externas das caixas*/
+    cursor: pointer; /*mudar cursor*/
+}
+
+.caixa:hover{
+     box-shadow: 12px 12px 22px rgb(245, 222, 179, 0.557); /*sombra externas das caixas*/
+    transition: 0.8s; 
+}
+
+.caixa-img{
+    width: 100%; /*lagura*/
+    height: 100%; /*altura*/
+}
+
+.section-03{
+    display: flex; /*tornando lado a lado*/
+    justify-content: center; /*alinhamento horizontal*/
+    align-items: center; /*alinhamento vertical*/
+    gap: 1.5rem; /*brecha entre as caixa*/
+    padding: 5rem; /*preenchimento interno*/
+    background-color: rgb(46, 45, 45); /*cor de fundo*/
+    flex-wrap: wrap; /*caso necessário voce poderá quebrar*/
+}
+
+.div03{
+    height: 15rem; /*altura das caixas*/
+    padding: rem; /*preenchimento interno*/
+    text-align: center; /*alinhando os textos ao inicio*/
+    color: black;
+}
+
+.caixa{
+    height: 15rem; /*altura das caixas*/
+    text-align: center; /*alinhando os textos ao inicio*/
+    color: black; 
+    font-size: 1.4rem;
+}
+
+.img-info{
+    width: 100%;
+    height: 70%;
+}
+
+.img-info p{
+    font-size: 7rem;
+}
+/*estilização dos textos da primeira caixa*/
+
+.context-text{
+    text-align: start; /*alinhando os textos ao inicio*/
+    margin: 1rem; /*espacamento da caixa*/
+    color: gold; /*cor do texto*/
+    font-weight: 500; /*peso da font*/
+}
+
+.icon-div3e i {
+    color: rgb(3, 3, 3); /*cor do texto*/
+    font-size: 2.5rem; /*tamanho dos icones*/
+    margin-top: 1rem; /*espaçamento superior dos icon*/
+    padding: 1.5rem; /*preenchimento interno*/
+    align-items: center; /*alinhar itens*/
+    justify-content: center; /*justificar itens*/
+    margin-right: 1.5rem ; /*margin da direita*/
+}
+
+/*inicio estilização rodape*/
+
+.rodape{
+    background-color: black; /*cor de fundo*/
+    padding: 2rem; /*preenchimento*/
+    text-align: center; /*alinhar texto no centro*/
+    font-size: 1.1rem; /*tamanho do texto*/
+}
+
+.content{
+    display: flex; /*deixar lado a lado*/
+    align-items: center; /*alinhar itens*/
+    justify-content: center; /*justificar itens*/
+    gap: 3rem; /*brecha entre as caixa*/
+    flex-wrap: wrap; /*caso necessário voce poderá quebrar*/
+    margin-bottom: 1.5rem; /**/
+}
+
+/*espaçamento da div que guarda os icon*/
+
+.social-media{
+    padding: 1.5rem; /*preenchimento interno*/
+}
+
+/*estilizando os icon*/
+
+.social-media i{
+    color: gold; /*cor do texto*/
+    font-size: 2em; /*tamanhoo da letra*/
+    margin: 0.5em; /*espaçamento nos quatro lados*/
+}
+
+.div-list ul li a{
+    color: gold; /*cor do texto*/
+    text-decoration: none; /*tirar sublinhado*/
+}
+
+.div-list ul li a:hover{
+    color: white; /*cor do texto*/
+    transition: 0.8s; /*transição*/
+}
+
+.div-list ul li{
+    margin-bottom: 0.7rem;
+}
+
+.whatsapp img{ /*alterando o icon do whattsapp*/
+    width: 50px; /*largura*/
+}
+
+.whatsapp{ /*div que guarda o icon whattasapp*/
+    position: fixed; /*posicionamento*/
+    right: 25px; /*posiçao a dieita*/
+    bottom: 25px; /*posicição ao bottom*/
+}
+
+.whatsapp img:hover{
+    width: 60px; /*largura*/
+    transition: 0.8s; /*tempo de transição*/
 }
