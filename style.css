@@ -128,7 +128,7 @@
 }
 
 /*estilizando a segunda section*/
-.section-02, .section-04{
+.section02, .section04{
     display: flex; /*tornando lado a lado*/
     justify-content: center; /*alinhamento horizontal*/
     align-items: center; /*alinhamento vertical*/
@@ -160,7 +160,7 @@
     height: 100%; /*altura*/
 }
 
-.section-03{
+.section03{
     display: flex; /*tornando lado a lado*/
     justify-content: center; /*alinhamento horizontal*/
     align-items: center; /*alinhamento vertical*/
@@ -178,10 +178,21 @@
 }
 
 .caixa{
-    height: 15rem; /*altura das caixas*/
+    height: 25rem; /*altura das caixas*/
     text-align: center; /*alinhando os textos ao inicio*/
     color: black; 
     font-size: 1.4rem;
+}
+
+.caixa h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.caixa p {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 700;
 }
 
 .img-info{
