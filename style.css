@@ -85,7 +85,7 @@
     margin: 5px 5px; /*alterando os 4 lados externos dos elementos, primeiro valor (superior, inferior) e segundo valor (lados esquerdo, direito)*/
 }
 
-.div02{
+.caixa{
     padding: 1rem;
     width: 25%;
     min-width: 299px;
@@ -100,24 +100,6 @@
     justify-content: center;
     flex-direction: column;
     gap: 15px;
-}
-
-.div02 i{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.div02 span{
-     color: gold;
-    background-color: black;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin-right: 13rem;
 }
 
 .img-div{
@@ -164,17 +146,30 @@
     display: flex; /*tornando lado a lado*/
     justify-content: center; /*alinhamento horizontal*/
     align-items: center; /*alinhamento vertical*/
+    
     gap: 1.5rem; /*brecha entre as caixa*/
     padding: 5rem; /*preenchimento interno*/
     background-color: rgb(46, 45, 45); /*cor de fundo*/
     flex-wrap: wrap; /*caso necessário voce poderá quebrar*/
 }
 
+.divimagem {
+   background-image: url(img/aparelhos.webp);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%; /*largura da caixa*/
+   height: 22rem; /*altura da caixa*/
+}
+
+
 .div03{
-    height: 15rem; /*altura das caixas*/
-    padding: rem; /*preenchimento interno*/
-    text-align: center; /*alinhando os textos ao inicio*/
-    color: black;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 15px;
 }
 
 .caixa{
@@ -210,16 +205,6 @@
     margin: 1rem; /*espacamento da caixa*/
     color: gold; /*cor do texto*/
     font-weight: 500; /*peso da font*/
-}
-
-.icon-div3e i {
-    color: rgb(3, 3, 3); /*cor do texto*/
-    font-size: 2.5rem; /*tamanho dos icones*/
-    margin-top: 1rem; /*espaçamento superior dos icon*/
-    padding: 1.5rem; /*preenchimento interno*/
-    align-items: center; /*alinhar itens*/
-    justify-content: center; /*justificar itens*/
-    margin-right: 1.5rem ; /*margin da direita*/
 }
 
 /*inicio estilização rodape*/
