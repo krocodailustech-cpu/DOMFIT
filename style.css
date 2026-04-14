@@ -121,13 +121,17 @@
     font-size: 1.5rem;
 }
 
+.section02{
+    background-color: black;
+}
+
 .caixa{
     width: 25%; /*largura da caixa*/
     height: 22rem; /*altura da caixa*/
-    background-color: grey; /*cor de fundo*/
+    background-color: rgba(250, 249, 249, 0.219); /*cor de fundo*/
     min-width: 299px; /*largura minima da div*/
     font-size: 1.2; /*tamanho das letras*/
-    color: gold; /*cor dos textos*/
+    color:white; /*cor dos textos*/
     box-shadow: 10px 10px 20px rgb(245, 222, 179, 0.354); /*sombra externas das caixas*/
     cursor: pointer; /*mudar cursor*/
 }
