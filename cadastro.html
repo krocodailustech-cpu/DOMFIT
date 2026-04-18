@@ -2,47 +2,65 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Faça seu Login</title>
-  <link rel="stylesheet" href="cadastro.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Cadastro</title>
 </head>
 
 <body>
-  <main>
-    <div class="container">
-      <h2>Login</h2>
 
-         <!-- Inicio do form -->
-      <form action="">
-        <div class="input-group">
-          <label for="email">Login</label>
-          <input type="email" placeholder="Digite seu login" required>
+    <main>
+        <div class="container">
+
+            <div class="lado-esquerdo">
+                <h2>Crie sua conta</h2>
+                <p>Cadastre-se para acessar nossa plataforma e <br> aproveitar todos os recursos disponiveis.</p>
+            </div>
+
+            <div class="lado-direito">
+                <h2>Cadastro</h2>
+
+                <form action="">
+                    <div class="row">
+                        <div class="form-group">
+                            <input type="text" placeholder="Nome" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" placeholder="Sobrenome" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" placeholder="Usuário" required>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group">
+                            <input type="password" placeholder="Senha" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" placeholder="Confirmar senha" required>
+                        </div>
+                    </div>
+
+                        <button class="btn">Criar conta</button>
+
+                </form>
+
+                <div class="link">
+                    <a href="entrar.html">Já tenho uma conta</a>
+                </div>
+            </div>
         </div>
+    </main>
 
-         <div class="input-group">
-           <label for="senha">Senha</label>
-           <input type="password" placeholder="Digite sua senha" required>
-         </div>
-
-         <div class="links">
-            <a href="">Esqueci minha senha</a>
-            <a href="cadastro.html">Não tenho cadastro</a>
-         </div>
-
-         <input type="submit" class="btn" value="Entrar">
-         
-      </form>
-      <!-- Fim do form -->
-
-      <button class="google-btn">
-            <img src="img/google.png" alt="Icon Google">
-            Entrar com Google
-      </button>
-
-
-    </div>
-  </main>
 </body>
 
 </html>

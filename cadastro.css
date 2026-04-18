@@ -3,114 +3,127 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  body {
-    height: 100vh; /*estamos dizendo ao body que queremos a altura completa (100%)*/
+}
+
+body {
+    height: 100vh; /*para centralizar no centro da tela*/
     display: flex;
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, #171430, white);
-  }
-  
-  .google-btn img {
-    width: 20px;
-  }
-  
-  .container {
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 900px;
     background-color: white;
-    padding: 2rem;
-    border-radius: 15px;
-    width: 100%;
-    max-width: 400px; /*Define a largura máxima do container em 400px*/
-    box-shadow: 0 10px 25px black;
-  }
-  
-  h2 {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.lado-esquerdo {
+    width: 50%;
+    background-color: #171430;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lado-esquerdo h1 {
+    margin-bottom: 10px; /*margim de cima*/
+    font-weight: 700;
+}
+
+.lado-esquerdo p {
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+/*lado do formulario*/
+.lado-direito {
+    width: 50%;
+    padding: 30px;
+}
+
+.lado-direito h2 {
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 20px;
     color: #171430;
-  }
-  
-  .input-group {
-    margin-bottom: 1rem;
-  }
-  
-  .input-group label {
-    display: block; /*Mantendo o comportamento do elemento em bloco ()*/
-    margin-bottom: 5px;
-    color: #555;
-  }
-  
-  .input-group input {
+}
+
+/*campos do formulario*/
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input {
     width: 100%;
     padding: 10px;
-    border-radius: 8px;
     border: 1px solid #ccc;
-    outline: none; /*Remove o contorno(borda externa) do elemento*/
-    transition: 0.3s;
-  }
-  
-  .input-group input:focus {
-    border-color: #171430;
-    box-shadow: 0 0 5px #555;
-  }
-  
-  .links {
+    border-radius: 5px;
+}
+
+.row {
     display: flex;
-    justify-content: space-between;
-    gap: 15px;
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-  }
-  
-  .links a {
-    text-decoration: none;
-    color: #171430;
-  }
-  
-  .links a:hover {
-    text-decoration: underline;
-  }
-  
-  .btn {
+    gap: 5px;
+}
+
+.row .form-group {
+    width: 50%;
+}
+
+.btn {
     width: 100%;
     padding: 12px;
     border: none;
-    border-radius: 8px;
     background-color: #171430;
+    border-radius: 15px;
     color: white;
-    font-size: 1rem;
+    font-weight: 700;
     cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  .btn:hover {
-    background-color: #bbb7e1;
+    transition: 0.7s;
+}
+
+.btn:hover {
+    background-color:  #cacacd;
     color: #171430;
-  }
-  
-  .google-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    width: 100%;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    transition: 0.3s;
-    background-color: white;
-    margin-top: 1rem;
-  }
-  
-  .google-btn:hover {
-    background-color: #f5f5f5;
-  }
-  
-  @media (max-width: 480px) {
+    font-weight: 700;
+}
+
+.link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.link a {
+    text-decoration: none;
+    color: #171430;
+    font-weight: 700;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
     .container {
-      padding: 1.5rem;
+      flex-direction: column; /* empilha no mobile */
+    }
+  
+    .lado-esquerdo, .lado-direito {
+      width: 100%; /* ocupa toda largura */
+    }
+  
+    .row {
+      flex-direction: column; /* campos ficam um embaixo do outro */
+    }
+  
+    .row .form-group {
+      width: 100%;
     }
   }
